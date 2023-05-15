@@ -1,8 +1,13 @@
 import './App.css';
-import { Todo } from './components/index';
+import { Todo, UncontrolledFormComponentSolution } from './components/index';
 
 function App() {
-  return <Todo />;
+  return (
+    <>
+      {/* <Todo /> */}
+      <UncontrolledFormComponentSolution />
+    </>
+  );
 }
 
 export default App;
