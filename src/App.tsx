@@ -1,10 +1,20 @@
 import './App.css';
-import { Todo, UncontrolledFormComponentSolution, MemoExample1, UseMemoExample2 } from './components/index';
+import {
+  Todo,
+  MemoExample1,
+  UseMemoExample2,
+  UseRefExample1,
+  UseRefExample2,
+  UseRefExample3,
+} from './components/index';
 
 function App() {
   return (
     <>
-      <UseMemoExample2 />
+      {/* <UseMemoExample2 /> */}
+      <UseRefExample1 />
+      <UseRefExample2 />
+      <UseRefExample3 />
       {/* <Todo /> */}
       {/* <UncontrolledFormComponentSolution /> */}
     </>

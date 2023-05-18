@@ -1,6 +1,8 @@
-import React, { memo, useMemo } from 'react';
+// Пример оптимизации с помощью memo, useMemo
 
-export const UseMemoExample2 = () => {
+import React, { FC, memo, useMemo } from 'react';
+
+export const UseMemoExample2: FC = () => {
   const [state, setState] = React.useState(0);
   const list = useMemo(() => [1, 2, 3, 4, 5, 6, 7], []);
   console.log('useMemoExample2 is rerendered');

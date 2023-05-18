@@ -1,8 +1,8 @@
 // Пример оптимизации с помощью memo, useMemo
 
-import { memo, useMemo, useState } from 'react';
+import { FC, memo, useMemo, useState } from 'react';
 
-export const MemoExample1 = () => {
+export const MemoExample1: FC = () => {
   const [count, setCount] = useState<number>(0);
   const [count2, setCount2] = useState<number>(0);
 
