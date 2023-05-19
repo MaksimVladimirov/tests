@@ -4,3 +4,4 @@ export * from './useMemo, memo/useMemoExample2';
 export * from './useRef/useRefExample1';
 export * from './useRef/useRefExample2';
 export * from './useRef/useRefExample3';
+export * from './useCallback-usecases/useCallbackExample';
