@@ -7,12 +7,16 @@ import {
   UseRefExample2,
   UseRefExample3,
   UseCallbackExample1,
+  ReduxExample,
+  TodosWithRedux,
 } from './components/index';
 
 function App() {
   return (
     <>
-      <UseCallbackExample1 />
+      <TodosWithRedux />
+      {/* <ReduxExample /> */}
+      {/* <UseCallbackExample1 /> */}
       {/* <UseMemoExample2 /> */}
       {/* <UseRefExample1 />
       <UseRefExample2 />
