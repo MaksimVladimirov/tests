@@ -6,8 +6,6 @@ export const MemoExample1: FC = () => {
   const [count, setCount] = useState<number>(0);
   const [count2, setCount2] = useState<number>(0);
 
-  console.log('example is rendered');
-
   return (
     <>
       <button onClick={() => setCount(count + 1)}> Increment Count 1 </button>
@@ -21,7 +19,6 @@ export const MemoExample1: FC = () => {
 
 export const MyComponent = memo(({ count }: { count: number }) => {
   const expensiveResult = useMemo(() => {
-    console.log('expensiveResult is rendered');
 
     if (count === 3) {
       return `Это 3 ✅`;
@@ -29,7 +26,6 @@ export const MyComponent = memo(({ count }: { count: number }) => {
       return `Это не 3 ❌`;
     }
   }, [count === 3]);
-  console.log('mycomponent is rendered');
 
   return <div>{expensiveResult}</div>;
 });
