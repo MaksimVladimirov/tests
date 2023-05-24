@@ -19,7 +19,6 @@ export const MemoExample1: FC = () => {
 
 export const MyComponent = memo(({ count }: { count: number }) => {
   const expensiveResult = useMemo(() => {
-
     if (count === 3) {
       return `Это 3 ✅`;
     } else {

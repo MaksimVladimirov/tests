@@ -9,12 +9,14 @@ import {
   UseCallbackExample1,
   ReduxExample,
   TodosWithRedux,
+  DebounceFn,
 } from './components/index';
 
 function App() {
   return (
     <>
-      <TodosWithRedux />
+      <DebounceFn />
+      {/* <TodosWithRedux /> */}
       {/* <ReduxExample /> */}
       {/* <UseCallbackExample1 /> */}
       {/* <UseMemoExample2 /> */}

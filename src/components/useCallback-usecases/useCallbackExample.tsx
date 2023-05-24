@@ -5,7 +5,7 @@ export const UseCallbackExample1 = () => {
 
   const foreceUpdated = useCallback(() => {
     setIsUpdated((prev) => !prev);
-	console.log('функция пересоздана')
+    console.log('функция пересоздана');
   }, []);
 
   console.log('component is rerendered');
