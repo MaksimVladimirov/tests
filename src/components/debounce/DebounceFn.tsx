@@ -1,10 +1,10 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, useState, useEffect } from 'react';
 
 export const DebounceFn: React.FC = () => {
-  const [inputValue, setInputValue] = React.useState<string>('');
+  const [inputValue, setInputValue] = useState<string>('');
   const [debouncedValue, setDebouncedValue] = useState<string>('');
 
-  React.useEffect(() => {
+  useEffect(() => {
     const timeoutId = setTimeout(() => {
       setDebouncedValue(inputValue);
     }, 500);
